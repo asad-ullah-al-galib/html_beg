@@ -80,11 +80,21 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 /*_________________________________________________________________________________________________________________________________________*/
 void answer()
 {
+    int n; cin>>n;
+    set<int>st;
+    loop
+    {
+        int x; cin>>x;
+        if(st.count(x)) st.erase(x);
+        else st.insert(x);
+    }
+    if(st.empty()) cout<<"Agasa"<<en;
+    else cout<<"Conan"<<en;
 }
 int main()
 {
     AMGR();
-    test(answer);
+    answer();
 }
 /*__________________________________________________________________________________________________________________________________________*/
 /*                               ++  --  ++  --  ++  cout<<"That's it. Keep coding:)"<<endl;  ++  --  ++  --  ++                          */

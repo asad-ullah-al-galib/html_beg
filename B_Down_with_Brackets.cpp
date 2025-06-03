@@ -80,6 +80,17 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 /*_________________________________________________________________________________________________________________________________________*/
 void answer()
 {
+    string s; cin>>s;
+    int zero=0;
+    int res=0;
+    for(auto e:s) 
+    {
+        if(res==0) zero++;
+        if(e=='(') res++;
+        else res--;
+    }
+    if(zero>=2) yes
+    else no
 }
 int main()
 {

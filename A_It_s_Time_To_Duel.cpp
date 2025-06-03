@@ -80,6 +80,14 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 /*_________________________________________________________________________________________________________________________________________*/
 void answer()
 {
+    int n;cin>>n;
+    vi v(n);
+    vectorinput(v);
+    bool f=0;
+    for(int i=0;i+1<n;i++) if(v[i]==0 and v[i+1]==0) f=1;
+    if(count(all(v),0)==0) f=1;
+    if(f) yes
+    else no
 }
 int main()
 {

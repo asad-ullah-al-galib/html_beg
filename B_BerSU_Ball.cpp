@@ -80,11 +80,30 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 /*_________________________________________________________________________________________________________________________________________*/
 void answer()
 {
+    int n; cin>>n;
+    vi v(n);
+    vectorinput(v);
+    int m; cin>>m;
+    vi vv(m);
+    vectorinput(vv);
+    sort(all(v));
+    srt(vv);
+    int res=0,p1=0,p2=0;
+    while(p1<n and p2<m)
+    {
+        if(abs(v[p1]-vv[p2])<=1)
+        {
+            res++,p1++,p2++;
+        }
+        else if(v[p1]<vv[p2])p1++;
+        else p2++;
+    }
+    dekha
 }
 int main()
 {
     AMGR();
-    test(answer);
+    answer();
 }
 /*__________________________________________________________________________________________________________________________________________*/
 /*                               ++  --  ++  --  ++  cout<<"That's it. Keep coding:)"<<endl;  ++  --  ++  --  ++                          */

@@ -80,6 +80,9 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 /*_________________________________________________________________________________________________________________________________________*/
 void answer()
 {
+    ll a,b,c,d; cin>>a>>b>>c>>d;
+    if(min(a,c)>=min(b,d)) cout<<"Gellyfish"<<en;
+    else cout<<"Flower"<<en;
 }
 int main()
 {

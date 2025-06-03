@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(241, 239, 234);
+}
+header{
+    text-align: center;
+}
+hr{
+    border: 2px solid;
+    color: rgb(164, 135, 222);
+}
+.photo{
+    border-radius: 36px;
+    height: 205px;
+    width: 140px;
+}
+a{
+    color: blue;
+}
+address{
+    font-style: normal;
+}
+footer{
+    text-align: center;
+}
+.nstu{
+    height: 60px;
+}
+.btn{
+    color: brown;
+    width: 120px;
+    height: 50px;
+    box-sizing: border-box;
+}

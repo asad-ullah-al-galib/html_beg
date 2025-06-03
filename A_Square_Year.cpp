@@ -78,8 +78,33 @@ template <typename T>
 //find_by_order(k) : K-th element in a set (counting from zero)
 using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 /*_________________________________________________________________________________________________________________________________________*/
+int isqrt(const & x) {
+    if(x<0)return -1; 
+    if(x==0 or x==1)return x;
+    int l=1,r=x,ans=0;
+    while(l<=r) 
+    {
+        int m=l+(r-l)/2;
+        if(m<=x/m) 
+        {
+            ans=m;
+            l=m+1;
+        } 
+        else r=m-1;
+        
+    }
+    return ans;
+}
 void answer()
 {
+    int n; cin>>n;
+    int res=isqrt(n);
+    if(res*res==n) 
+    {
+        cout<<0<<" "<<res<<en;
+        return;
+    }
+    else cout<<-1<<en;
 }
 int main()
 {

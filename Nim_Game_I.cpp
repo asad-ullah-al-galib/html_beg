@@ -80,6 +80,15 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 /*_________________________________________________________________________________________________________________________________________*/
 void answer()
 {
+    int n; cin>>n;
+    int x = 0;
+    for (int i = 0; i < n; i++) {
+        int a; cin>>a;
+        x^=a;
+       
+    }
+    if (x) cout<<"first"<<en;
+    else cout<<"second"<<en;
 }
 int main()
 {
