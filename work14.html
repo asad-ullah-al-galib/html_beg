@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create rotate effect</title>
+</head>
+<style> 
+.ok {
+  overflow: hidden;
+  margin: 8px;
+  min-width: 240px;
+  max-width: 320px;
+  width: 100%;
+}
+
+.ok img {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.ok:hover img {
+  transform: scale(1.3) rotate(5deg);
+}
+</style>
+<body>
+    <strong>Preview:</strong>
+    <figure class="ok">
+        <img src="https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/flower-2.jpeg" height="100" width="100"/>   
+    </figure>
+</body>
+</html>
