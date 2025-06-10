@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Image Overlay on Hover</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: sans-serif;
+      margin-top: 30px;
+    }
+
+    .preview-text {
+      font-weight: bold;
+      flex-direction: column;
+      font-family: sans-serif;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .hover-img {
+      position: relative;
+      width: 250px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .hover-img img {
+      width: 100%;
+      display: block;
+      transition: 0.3s ease;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: 0.3s ease;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    .hover-img:hover img {
+      opacity: 0.7;
+    }
+
+    .hover-img:hover .overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div class="preview-text">Preview:</div>
+
+<div class="hover-img">
+  <img src="https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/flower-2.jpeg" alt="Flower">
+  <div class="overlay">
+    <div>Pansy<br>Flower</div>
+  </div>
+</div>
+
+</body>
+</html>
