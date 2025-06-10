@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css create display over photo</title>
+</head>
+<style>
+    div 
+    {
+        position: relative;
+    }
+    .ok{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1rem;
+        font-size: 2rem;
+        font-weight: 100;
+        color: white;
+        backdrop-filter: blur(8px) brightness(80%);
+    }
+</style>
+<body>
+    <div>
+        <h3 class="ok">Hello, World</h3>
+        <img src="https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/flower-1.jpeg" height="200" width="200">
+    </div>
+</body>
+</html>
