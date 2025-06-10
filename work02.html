@@ -1,76 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Styled Checkbox with Animation</title>
-  <style>
-    .checkbox-container {
-      display: flex;
-      gap: 1rem;
-      padding: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    .checkbox-input {
-      display: none;
-    }
-
-    .checkbox {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      cursor: pointer;
-      position: relative;
-    }
-
-    .checkbox span:first-child {
-      width: 16px;
-      height: 16px;
-      border: 2px solid #0087ca;
-      border-radius: 3px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background-color 0.3s;
-    }
-
-    .checkbox-input:checked + .checkbox span:first-child {
-      background-color: #0087ca;
-    }
-
-    .checkbox svg {
-      display: none;
-      fill: white;
-    }
-
-    .checkbox-input:checked + .checkbox svg {
-      display: block;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling the text selection</title>
 </head>
+<style>
+    .ok{
+        background:white;
+        color: black;
+    }
+</style>
 <body>
-  <div class="checkbox-container">
-    <input class="checkbox-input" id="oranges" type="checkbox">
-    <label class="checkbox" for="oranges">
-      <span>
-        <svg width="12px" height="10px" viewBox="0 0 12 10">
-          <path d="M1 5l3 3 7-7" stroke="white" stroke-width="2" fill="none"/>
-        </svg>
-      </span>
-      <span>Oranges</span>
-    </label>
-
-    <input class="checkbox-input" id="bananas" type="checkbox">
-    <label class="checkbox" for="bananas">
-      <span>
-        <svg width="12px" height="10px" viewBox="0 0 12 10">
-          <path d="M1 5l3 3 7-7" stroke="white" stroke-width="2" fill="none"/>
-        </svg>
-      </span>
-      <span>Bananas</span>
-    </label>
-  </div>
+    <div class="ok">
+        <strong>Preview:</strong>
+        <p>Select some of this text.</p>
+    </div>
 </body>
 </html>
