@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation Hover</title>
+  <style>
+    .container {
+      border: 2px solid #ccc;
+      padding: 10px;
+      width: fit-content;
+    }
+
+    .preview-text {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: black;
+      padding: 8px 12px;
+      transition: background-color 0.5s;
+    }
+
+    .nav a:hover {
+      background-color: rgba(238, 157, 6, 0.835);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="preview-text">Preview:</div>
+  <div class="nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+</body>
+</html>
